@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box-1 {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        .box-2 {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        .box-3 {
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            margin: 10px;
+            border: 2px solid black;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-1" id="item_uno">
+        </div>
+        <div class="box-2" id="item_dos">
+        </div>
+        <div class="box-3" id="item_tres">
+        </div>
+    </div>
+
+    <script>
+
+        var itemUno = document.getElementById('item_uno');
+        itemUno.addEventListener('click', function () {
+            document.body.style.backgroundColor = "red";
+        });
+
+        var itemDos = document.getElementById('item_dos');
+        itemDos.addEventListener('click', function () {
+            document.body.style.backgroundColor = "green";
+        });
+
+        var itemTres = document.getElementById('item_tres');
+        itemTres.addEventListener('click', function () {
+            document.body.style.backgroundColor = "yellow";
+        });
+
+    </script>
+</body>
+
+</html>
